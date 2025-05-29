@@ -143,7 +143,7 @@ class Harness_Builder:
         # first attempt to call auxiliary functions 
         final_sequences = self.call_auxiliary_func(possible_aux_function_calls, sequence, currFunction, restricted_indexes, aux_path, depth, explore_further)
 
-        if len(final_sequences) or not self.explore_further: 
+        if len(final_sequences) or not explore_further: 
             return final_sequences
 
         # call other functions that are not auxiliary but are still potentially easy to call

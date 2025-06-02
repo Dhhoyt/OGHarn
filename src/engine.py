@@ -733,7 +733,7 @@ class ConvertToC:
     def buildBody(self):
         funcDict = dict()
         body = C.block(innerIndent=3)
-        body.append("__afl_manual_init();")
+        #body.append("__afl_manual_init();")
         for func in self.functions.getAllFunctions():
             funcDict[func.name] = 1
         if self.read_from_buffer:
